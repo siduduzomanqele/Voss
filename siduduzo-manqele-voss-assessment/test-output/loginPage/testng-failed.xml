@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [loginPage]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="PositiveTests-Login(failed)">
+    <classes>
+      <class name="siduduzo.voss.tests.LoginPageTest">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="classLevelSetup"/>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- siduduzo.voss.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- PositiveTests-Login(failed) -->
+</suite> <!-- Failed suite [loginPage] -->

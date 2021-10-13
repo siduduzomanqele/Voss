@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [homePage]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="PositiveTests-CH(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="siduduzo.voss.tests.HomePageTest">
+        <methods>
+          <include name="verifyHomePage" invocation-numbers="0"/>
+          <include name="methodLevelSetup"/>
+          <include name="classLevelSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- siduduzo.voss.tests.HomePageTest -->
+    </classes>
+  </test> <!-- PositiveTests-CH(failed) -->
+</suite> <!-- Failed suite [homePage] -->

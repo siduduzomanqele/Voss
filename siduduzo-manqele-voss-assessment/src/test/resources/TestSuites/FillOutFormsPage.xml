@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Fill Out Form Page Test" verbose="1">
+
+	<test name="PositiveTests-FillOutFormPageTest">
+		<classes>
+			<class
+				name="siduduzo.voss.tests.FillOutFormPageTest">
+			</class>
+		</classes>
+	</test>
+
+</suite>

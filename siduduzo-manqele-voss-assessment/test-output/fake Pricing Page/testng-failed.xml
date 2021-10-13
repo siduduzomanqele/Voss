@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [fake Pricing Page]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="PositiveTests-Fake Pricing(failed)">
+    <classes>
+      <class name="siduduzo.voss.tests.FakePricingPageTest">
+        <methods>
+          <include name="purchasePackage" invocation-numbers="0"/>
+          <include name="methodLevelSetup"/>
+          <include name="classLevelSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- siduduzo.voss.tests.FakePricingPageTest -->
+    </classes>
+  </test> <!-- PositiveTests-Fake Pricing(failed) -->
+</suite> <!-- Failed suite [fake Pricing Page] -->

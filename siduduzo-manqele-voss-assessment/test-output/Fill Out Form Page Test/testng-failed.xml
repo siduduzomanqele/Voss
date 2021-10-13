@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Fill Out Form Page Test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="PositiveTests-FillOutFormPageTest(failed)">
+    <classes>
+      <class name="siduduzo.voss.tests.FillOutFormPageTest">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="classLevelSetup"/>
+          <include name="teardown"/>
+          <include name="fillOutForms" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- siduduzo.voss.tests.FillOutFormPageTest -->
+    </classes>
+  </test> <!-- PositiveTests-FillOutFormPageTest(failed) -->
+</suite> <!-- Failed suite [Fill Out Form Page Test] -->
