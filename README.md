@@ -2,7 +2,7 @@
 Voss Assessment - Siduduzo
 
 ## Prerequisites
-1. Assuming you have Java installed downloade eclipse IDE.
+1. Assuming you have Java installed download eclipse IDE.
 2. Install Mavem - useful link https://maven.apache.org/download.cgi
 3. Install TestNG - https://testng.org/doc/eclipse.html
 
