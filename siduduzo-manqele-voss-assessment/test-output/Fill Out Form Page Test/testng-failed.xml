@@ -7,7 +7,6 @@
         <methods>
           <include name="methodLevelSetup"/>
           <include name="classLevelSetup"/>
-          <include name="teardown"/>
           <include name="fillOutForms" invocation-numbers="0"/>
         </methods>
       </class> <!-- siduduzo.voss.tests.FillOutFormPageTest -->

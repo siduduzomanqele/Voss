@@ -8,7 +8,6 @@
           <include name="purchasePackage" invocation-numbers="0"/>
           <include name="methodLevelSetup"/>
           <include name="classLevelSetup"/>
-          <include name="teardown"/>
         </methods>
       </class> <!-- siduduzo.voss.tests.FakePricingPageTest -->
     </classes>

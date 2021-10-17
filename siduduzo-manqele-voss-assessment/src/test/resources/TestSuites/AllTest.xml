@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="All Tests" verbose="1">
+
+	<test name="PositiveTests-Fake Pricing">
+		<classes>
+			<class
+				name="siduduzo.voss.tests.FakePricingPageTest">
+			</class>
+			<class
+				name="siduduzo.voss.tests.FillOutFormPageTest">
+			</class>
+			<class
+				name="siduduzo.voss.tests.HomePageTest">
+			</class>
+			<class
+				name="siduduzo.voss.tests.LoginPageTest">
+			</class>
+		</classes>
+	</test>
+
+</suite>

@@ -15,13 +15,14 @@ public class LoginPage extends BasePage {
 	private By pagePassword = By.id("user[password]");
 	private By searchTextBox = By.name("q");
 
+
 	public LoginPage(WebDriver driver) {
 		super(driver);
 
 	}
 
 	public LoginPage takeLoginScreenShot() throws IOException {
-		waitVisibility(searchTextBox);
+		waitVisibility(pageEmail);
 		screenShot.takeSnapshot("Login_Screen");
 
 		return this;

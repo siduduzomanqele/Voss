@@ -49,5 +49,19 @@ public class BasePage {
 	public void waitVisibility(By by) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 	}
+	
+	
+	public void elementTextDisplayed(String text)
+	{
+		
+		  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), '"+text+"')]")));
+	}
+	
+	public int countText(String text)
+	{
+		
+		int size = driver.findElements(By.xpath("//*[contains(text(), '"+text+"')]")).size();
+		return size;
+	}
 
 }

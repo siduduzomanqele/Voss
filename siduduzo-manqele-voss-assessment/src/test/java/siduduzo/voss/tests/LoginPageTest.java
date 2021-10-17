@@ -19,7 +19,7 @@ public class LoginPageTest extends BaseTest {
 		String email = testData.get("email");
 		String password = testData.get("password");
 		System.out.println("Starting Test Case ID " + testID + ", " + testDescription);
-		loginPage.openLoginPage().takeLoginScreenShot().login(email, password).takeLoginScreenShot().logout().takeLoginScreenShot();
+		loginPage.openLoginPage().takeLoginScreenShot().login(email, password).takeLoginScreenShot().logout();
 		
 	}
 

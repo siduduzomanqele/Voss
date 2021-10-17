@@ -19,10 +19,10 @@ public class FillOutFormPageTest extends BaseTest {
 		String firstName = testData.get("firstName");
 		String firstMessage = testData.get("firstMessage");
 		String cap = testData.get("cap");
-
-
+		String expectedMessage = testData.get("expectedMessage");
+		String expectedMCount = testData.get("expectedMCount");
 		System.out.println("Starting Test Case ID " + testID + ", " + testDescription);
-		fillOutFormsPage.openFormPage(homeTitle).fillFormScreenshot().fillFirstForm(firstName, firstMessage).fillsecondForm(firstName, firstMessage,cap);
+		fillOutFormsPage.openFormPage(homeTitle).fillFormScreenshot().fillFirstForm(firstName, firstMessage,expectedMessage).fillsecondForm(firstName, firstMessage,expectedMessage,expectedMCount);
 	}
 
 }

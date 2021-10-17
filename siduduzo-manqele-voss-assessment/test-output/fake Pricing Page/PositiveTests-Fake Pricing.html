@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 13 19:27:51 SAST 2021</td>
+<td>Started on:</td><td>Sun Oct 17 13:52:19 SAST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7200 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10813 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,29 +76,35 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='siduduzo.voss.tests.FakePricingPageTest.purchasePackage()'><b>purchasePackage</b><br>Test class: siduduzo.voss.tests.FakePricingPageTest<br>Parameters: {homeTitle=Automation Practice, fakeLink=https://ultimateqa.com/fake-pricing-page, testID=1, testDescription=Open fake Pricing page and purchase a basic package, basicLink=https://ultimateqa.com/automation/fake-pricing-page/#top}</td>
-<td><div><pre>org.openqa.selenium.JavascriptException: TypeError: document.getElementsByClassName(...)[0] is undefined
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@href=&apos;#top&apos;][2]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
 System info: host: &apos;ZA-NB054&apos;, ip: &apos;192.168.18.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 8, moz:profile: C:\Users\smanqele\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5d1bb2b8-d054-4c43-bf63-ab548db18289
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 14440, moz:profile: C:\Users\smanqele\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a4671839-e315-424b-9dcc-8f17790d3b46
+*** Element info: {Using=xpath, value=//a[@href=&apos;#top&apos;][2]}
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:436)
-	at siduduzo.voss.pages.FakePricingPage.purchaseBasicPackage(FakePricingPage.java:29)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at siduduzo.voss.pages.FakePricingPage.purchaseBasicPackage(FakePricingPage.java:32)
 	at siduduzo.voss.tests.FakePricingPageTest.purchasePackage(FakePricingPageTest.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace688113407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace688113407'><pre>org.openqa.selenium.JavascriptException: TypeError: document.getElementsByClassName(...)[0] is undefined
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1796671122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1796671122'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@href=&apos;#top&apos;][2]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
 System info: host: &apos;ZA-NB054&apos;, ip: &apos;192.168.18.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 8, moz:profile: C:\Users\smanqele\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5d1bb2b8-d054-4c43-bf63-ab548db18289
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 14440, moz:profile: C:\Users\smanqele\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a4671839-e315-424b-9dcc-8f17790d3b46
+*** Element info: {Using=xpath, value=//a[@href=&apos;#top&apos;][2]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -110,8 +116,10 @@ Session ID: 5d1bb2b8-d054-4c43-bf63-ab548db18289
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:436)
-	at siduduzo.voss.pages.FakePricingPage.purchaseBasicPackage(FakePricingPage.java:29)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at siduduzo.voss.pages.FakePricingPage.purchaseBasicPackage(FakePricingPage.java:32)
 	at siduduzo.voss.tests.FakePricingPageTest.purchasePackage(FakePricingPageTest.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -142,8 +150,8 @@ Session ID: 5d1bb2b8-d054-4c43-bf63-ab548db18289
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>siduduzo.voss.tests.FakePricingPageTest@7ec7ffd3</td></tr>
+<td>5</td>
+<td>siduduzo.voss.tests.FakePricingPageTest@455351c4</td></tr>
 </table><p>
 </body>
 </html>

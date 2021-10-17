@@ -5,6 +5,8 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class FillOutFormsPage extends BasePage {
 	String loginurl = "https://ultimateqa.com/automation/";
@@ -30,31 +32,34 @@ public class FillOutFormsPage extends BasePage {
 		return this;
 	}
 
-	public FillOutFormsPage fillFirstForm(String firstName, String firstmessage) {
+	public FillOutFormsPage fillFirstForm(String firstName, String firstmessage,String expectedMessage) {
 		waitVisibility(message_one);
-		//click(submitButton);
+		click(submitButton);
 		typeText(name_one, firstName);
 		typeText(message_one, firstmessage);
 		click(submitButton);
-		
+		elementTextDisplayed(expectedMessage);
 		return this;
 
 	}
 	
-	public FillOutFormsPage fillsecondForm(String firstName, String firstmessage, String cap) {
+	public FillOutFormsPage fillsecondForm(String firstName, String firstmessage, String expectedMessage, String noOftime) {
 		waitVisibility(message_two);
-		//click(submitButton);
 		typeText(name_two, firstName);
 		typeText(message_two, firstmessage);
-		/*
-		 * Float num1 = Float.parseFloat(js.executeScript(
-		 * "document.getElementsByTagName('input')[7].getAttribute('data-first_digit');"
-		 * ).toString()); Float num2 = Float.parseFloat(js.executeScript(
-		 * "document.getElementsByTagName('input')[7].getAttribute('data-second_digit');"
-		 * ).toString()); Float total = num1 + num2;
-		 */
+		String cap = Integer.toString(getCaptcha());
 		typeText(captcha, cap);
 		click(submitButton);
+		
+		// This is an unacceptable way of waiting for the process to complete, however the text "thanks for contacting us" already exist in this page. Therefore,
+		// there is nothing else to wait for while submitting the form.
+		try{
+			Thread.sleep(3000);
+			}
+			catch(InterruptedException ie){
+			}
+		String noOftimes = Integer.toString(countText(expectedMessage));
+		Assert.assertTrue(noOftimes.equals(noOftime));
 		
 		return this;
 
@@ -69,5 +74,20 @@ public class FillOutFormsPage extends BasePage {
 
 		return this;
 	}
+	
+	public int getCaptcha()
+	{
+		WebElement captchaText = driver.findElement(By.className("et_pb_contact_captcha_question"));
+		String getCap = captchaText.getAttribute("innerHTML");
+		String firstValue = getCap.split("[+]")[0];
+		String secondValue = getCap.split("[+]")[1];
+		String num1 = firstValue.replaceAll("\\s","");
+		String num2 = secondValue.replaceAll("\\s","");
+		int captcha =Integer.parseInt(num1) + Integer.parseInt(num2);
+		return captcha;
+		
+	}
+	
+
 
 }

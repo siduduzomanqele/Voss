@@ -8,7 +8,6 @@
           <include name="methodLevelSetup"/>
           <include name="classLevelSetup"/>
           <include name="testLogin" invocation-numbers="0"/>
-          <include name="teardown"/>
         </methods>
       </class> <!-- siduduzo.voss.tests.LoginPageTest -->
     </classes>
